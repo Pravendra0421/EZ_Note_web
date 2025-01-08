@@ -8,6 +8,7 @@ import { useTranslation } from 'react-i18next';
 import { PublishContext } from '@/application/publish';
 import { useCurrentUser } from '@/components/main/app.hooks';
 import  { ReactComponent as TemplateIcon } from '@/assets/template.svg';
+import EZLogo from '../../../assets/images/logo.png';
 
 function RightMenu () {
   const { t } = useTranslation();
@@ -43,7 +44,8 @@ function RightMenu () {
       />
       <Tooltip title={t('publish.downloadApp')}>
         <button onClick={() => openOrDownload()}>
-          <Logo className={'h-6 w-6'} />
+          {/*<Logo className={'h-6 w-6'} />*/}
+          <img src={EZLogo} className={'h-6 w-6'} />
         </button>
       </Tooltip>
     </>

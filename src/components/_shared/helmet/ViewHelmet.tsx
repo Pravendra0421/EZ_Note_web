@@ -51,7 +51,8 @@ function ViewHelmet ({
   if (!name) return null;
   return (
     <Helmet>
-      <title>{name} | AppFlowy</title>
+      {/*<title>{name} | AppFlowy</title>*/}
+      <title>{name} | EZNote</title>
     </Helmet>
   );
 }

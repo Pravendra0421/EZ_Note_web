@@ -9,7 +9,7 @@ import { Avatar, Button, Divider } from '@mui/material';
 import React, { useCallback, useContext, useEffect, useMemo, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useNavigate, useSearchParams } from 'react-router-dom';
-
+import EZLogo from '../assets/images/logo.png'
 function AcceptInvitationPage() {
   const isAuthenticated = useContext(AFConfigContext)?.isAuthenticated;
   const currentUser = useCurrentUser();
@@ -79,7 +79,8 @@ function AcceptInvitationPage() {
         }}
         className={'flex w-full cursor-pointer max-md:justify-center max-md:h-32 h-20 items-center justify-between sticky'}
       >
-        <AppflowyLogo className={'w-32 h-12 max-md:w-52'}/>
+        {/*<AppflowyLogo className={'w-32 h-12 max-md:w-52'}/>*/}
+        <img src={EZLogo} className='w-32 h-12 max-md:w-52'/>
       </div>
       <div className={'flex w-full max-w-[560px] flex-col items-center gap-6 text-center'}>
         <Avatar
@@ -95,7 +96,7 @@ function AcceptInvitationPage() {
           {' '}
           {t('invitation.on')}
           {' '}
-          <span className={'whitespace-nowrap'}>AppFlowy</span>
+          <span className={'whitespace-nowrap'}>EZNote</span>
 
         </div>
         <Divider className={'max-w-full w-[400px]'}/>

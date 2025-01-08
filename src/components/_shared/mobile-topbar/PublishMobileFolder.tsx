@@ -4,6 +4,7 @@ import React from 'react';
 import { ReactComponent as AppFlowyLogo } from '@/assets/appflowy.svg';
 import { useNavigate } from 'react-router-dom';
 import MobileOutline from 'src/components/_shared/mobile-outline/MobileOutline';
+import EZLogo from '../../../assets/images/logo.png'
 
 function PublishMobileFolder ({
   onClose,
@@ -26,7 +27,8 @@ function PublishMobileFolder ({
         }}
         className={'sticky top-0 w-full bg-bg-body z-[10] py-2 pb-0'}
       >
-        <AppFlowyLogo className={'w-[100px] h-[48px]'} />
+        {/*<AppFlowyLogo className={'w-[100px] h-[48px]'} />*/}
+        <img src={EZLogo} className='w-[100px] h-[48px]' />
       </div>
       {outline && <MobileOutline
         outline={outline}

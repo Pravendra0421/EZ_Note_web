@@ -3,7 +3,7 @@ import { getAvatarProps } from '@/components/app/workspaces/utils';
 import { Avatar } from '@mui/material';
 import React from 'react';
 import { ReactComponent as AppFlowyLogo } from '@/assets/appflowy.svg';
-
+import EZLogo from '../../../assets/images/logo.png'
 function CurrentWorkspace({
   userWorkspaceInfo,
   selectedWorkspace,
@@ -27,7 +27,8 @@ function CurrentWorkspace({
         void onChangeWorkspace(selectedId);
       }}
     >
-      <AppFlowyLogo className={'w-[88px]'}/>
+      {/*<AppFlowyLogo className={'w-[88px]'}/>*/}
+      <img src={EZLogo} className={'w-[88px]'}/>
     </div>;
   }
 

@@ -6,7 +6,7 @@ export const Paragraph = memo(
     {
       return (
         <div ref={ref} {...attributes} className={`${attributes.className ?? ''}`}>
-          {children}
+          {/*{children}*/}
         </div>
       );
     }

@@ -8,7 +8,7 @@ import React, { useContext } from 'react';
 import { useTranslation, Trans } from 'react-i18next';
 import { ReactComponent as AppflowyLogo } from '@/assets/appflowy.svg';
 import { useNavigate } from 'react-router-dom';
-
+import EZLogo from '../../../assets/images/logo.png'
 const REPEAT_REQUEST_CODE = 1043;
 
 function RequestAccess () {
@@ -45,7 +45,8 @@ function RequestAccess () {
           variant="h3" className={'mb-[27px] flex items-center gap-4 text-text-title'} gutterBottom
         >
           <>
-            <AppflowyLogo className={'w-48'} />
+            {/*<AppflowyLogo className={'w-48'} />*/}
+            <img src={EZLogo} className={'w-48'} />
           </>
         </Typography>
         <div className={'mb-[16px] max-md:text-[24px]  text-[52px] font-semibold leading-[128%] text-text-title'}>

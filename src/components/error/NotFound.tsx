@@ -4,7 +4,7 @@ import { Typography, Button } from '@mui/material';
 import { Trans, useTranslation } from 'react-i18next';
 import { Link, useNavigate } from 'react-router-dom';
 import { ReactComponent as AppflowyLogo } from '@/assets/appflowy.svg';
-
+import EZLogo from '../../assets/images/logo.png'
 const NotFound = () => {
   const { t } = useTranslation();
   const navigate = useNavigate();
@@ -20,7 +20,8 @@ const NotFound = () => {
           className={'mb-[27px] flex items-center gap-4 text-text-title'}
           gutterBottom
         >
-          <AppflowyLogo className={'w-32'} />
+          {/*<AppflowyLogo className={'w-32'} />*/}
+          <img src={EZLogo} className={'w-32'} />
         </Typography>
         <div className={'mb-[16px] text-[52px] font-semibold leading-[128%] text-text-title max-sm:text-[24px]'}>
           {t('publish.noAccessToVisit')}

@@ -3,7 +3,7 @@ import { Typography } from '@mui/material';
 import React from 'react';
 import { ReactComponent as AppflowyLogo } from '@/assets/appflowy.svg';
 import { useSearchParams } from 'react-router-dom';
-
+import EZLogo from '../assets/images/logo.png'
 function ImportPage () {
   const [search] = useSearchParams();
   const redirectTo = search.get('redirectToImport');
@@ -22,7 +22,8 @@ function ImportPage () {
           gutterBottom
         >
           <>
-            <AppflowyLogo className={'w-32'} />
+            {/*<AppflowyLogo className={'w-32'} />*/}
+            <img src={EZLogo} className={'w-32'} />
           </>
         </Typography>
       </div>

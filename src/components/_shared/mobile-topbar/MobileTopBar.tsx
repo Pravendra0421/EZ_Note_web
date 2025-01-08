@@ -13,7 +13,7 @@ import React, { useCallback } from 'react';
 import { ReactComponent as MenuIcon } from '@/assets/side_outlined.svg';
 import { ReactComponent as Logo } from '@/assets/logo.svg';
 import { ReactComponent as MoreIcon } from '@/assets/more.svg';
-
+import EZLogo from '../../../assets/images/logo.png'
 const PublishBreadcrumb = withPublishBreadcrumb(Breadcrumb);
 const AppBreadcrumb = withAppBreadcrumb(Breadcrumb);
 
@@ -65,7 +65,8 @@ function MobileTopBar ({ variant }: { variant?: UIVariant }) {
         <button
           onClick={() => openOrDownload()}
         >
-          <Logo className={'h-6 w-6'} />
+          {/*<Logo className={'h-6 w-6'} />*/}
+          <img src={EZLogo} className={'h-6 w-6'} />
         </button>
         <MobileDrawer
           onOpen={handleOpenMore}

@@ -6,14 +6,14 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import ShareButton from 'src/components/app/share/ShareButton';
 import { ReactComponent as Logo } from '@/assets/logo.svg';
-
+import EZLOGO from '../../../assets/images/logo.png';
 function RightMenu () {
   const { t } = useTranslation();
   const viewId = useAppViewId();
 
   return (
     <div className={'flex items-center gap-2'}>
-      {viewId && <ShareButton viewId={viewId} />}
+      {/*{viewId && <ShareButton viewId={viewId} />}*/}
       {viewId && <MoreActions viewId={viewId} />}
 
       <Divider
@@ -21,12 +21,12 @@ function RightMenu () {
         className={'mx-2'}
         flexItem
       />
-      <Tooltip title={t('publish.downloadApp')}>
+      {/*<Tooltip title={t('publish.downloadApp')}>
         <button onClick={() => openOrDownload()}>
           <Logo className={'h-6 w-6'} />
         </button>
-      </Tooltip>
-
+      </Tooltip>*/}
+     <img src={EZLOGO} className='w-8 h-8'/>
     </div>
   );
 }

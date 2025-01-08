@@ -16,7 +16,7 @@ import { Avatar, Button } from '@mui/material';
 import React, { useCallback, useContext, useEffect, useMemo } from 'react';
 import { Trans, useTranslation } from 'react-i18next';
 import { useNavigate, useSearchParams } from 'react-router-dom';
-
+import EZLogo from '../../../assets/images/logo.png'
 const WorkspaceMemberLimitExceededCode = 1027;
 const REPEAT_REQUEST_CODE = 1043;
 
@@ -130,7 +130,8 @@ function ApproveRequestPage() {
         }}
         className={'flex w-full cursor-pointer max-md:justify-center max-md:h-32 h-20 items-center justify-between sticky'}
       >
-        <AppflowyLogo className={'w-32 h-12 max-md:w-52'}/>
+        {/*<AppflowyLogo className={'w-32 h-12 max-md:w-52'}/>*/}
+        <img src={EZLogo} className={'w-32 h-12 max-md:w-52'}/>
       </div>
       <div className={'flex w-full flex-1 max-w-[560px] justify-center flex-col items-center gap-6 text-center'}>
         <Avatar

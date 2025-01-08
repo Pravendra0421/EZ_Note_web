@@ -9,7 +9,7 @@ import { fetch } from 'bun';
 const distDir = path.join(__dirname, 'dist');
 const indexPath = path.join(distDir, 'index.html');
 const baseURL = process.env.AF_BASE_URL as string;
-const defaultSite = 'https://appflowy.io';
+const defaultSite = 'https://www.eztech.in/';
 
 const setOrUpdateMetaTag = ($: CheerioAPI, selector: string, attribute: string, content: string) => {
   if ($(selector).length === 0) {
@@ -92,13 +92,13 @@ const createServer = async (req: Request) => {
     let title, description;
 
     if (reqUrl.pathname === '/after-payment') {
-      title = 'Payment Success | AppFlowy';
-      description = 'Payment success on AppFlowy';
+      title = 'Payment Success | EZNote';
+      description = 'Payment success on EZNote';
     }
 
     if (reqUrl.pathname === '/login') {
-      title = 'Login | AppFlowy';
-      description = 'Login to AppFlowy';
+      title = 'Login | EZNote';
+      description = 'Login to EZNote';
     }
 
     if (title) $('title').text(title);
@@ -156,7 +156,7 @@ const createServer = async (req: Request) => {
     const $ = load(htmlData);
 
     const description = 'Write, share, and publish docs quickly on AppFlowy.\nGet started for free.';
-    let title = 'AppFlowy';
+    let title = 'EZNote';
     const url = `https://${hostname}${reqUrl.pathname}`;
     let image = '/og-image.png';
     let favicon = '/appflowy.ico';

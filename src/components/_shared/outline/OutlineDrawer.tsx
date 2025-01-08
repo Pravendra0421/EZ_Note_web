@@ -9,7 +9,7 @@ import { useTranslation } from 'react-i18next';
 import { UIVariant } from '@/application/types';
 import { useState } from 'react';
 import { AFScroller } from '@/components/_shared/scroller';
-
+import EZLogo from '../../../assets/images/logo.png'
 export function OutlineDrawer({ onScroll, header, variant, open, width, onClose, children, onResizeWidth }: {
   open: boolean;
   width: number;
@@ -69,7 +69,8 @@ export function OutlineDrawer({ onScroll, header, variant, open, width, onClose,
               navigate('/app');
             }}
           >
-            <AppFlowyLogo className={'w-[88px]'}/>
+            {/*<AppFlowyLogo className={'w-[88px]'}/>*/}
+            <img src={EZLogo} className='w-[88px]'/>
           </div>}
 
           {hovered && <Tooltip

@@ -10,7 +10,7 @@ export const TodoList = memo(
     
     return (
       <div {...attributes} ref={ref} className={className}>
-        {children}
+        {/*{children}*/}
       </div>
     );
   })

@@ -1,7 +1,7 @@
 import { Divider } from '@mui/material';
 import React from 'react';
 import { ReactComponent as AppFlowyLogo } from '@/assets/appflowy.svg';
-
+import EZLogo from '../../../assets/images/logo.png'
 function AppFlowyPower ({
   divider,
   width,
@@ -20,7 +20,7 @@ function AppFlowyPower ({
 
       <div
         onClick={() => {
-          window.open('https://appflowy.io', '_blank');
+          window.open('https://www.eztech.in/', '_blank');
         }}
         style={{
           width,
@@ -30,7 +30,8 @@ function AppFlowyPower ({
         }
       >
         Powered by
-        <AppFlowyLogo className={'w-[88px]'} />
+        {/*<AppFlowyLogo className={'w-[88px]'} />*/}
+        <img src={EZLogo} className='w-[88px]' />
       </div>
     </div>
   );

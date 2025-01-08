@@ -69,7 +69,7 @@ export default function Help () {
             >
               {isDark ? t('settings.appearance.themeMode.light') : t('settings.appearance.themeMode.dark')}
             </Button>
-            <Button
+            {/*<Button
               component={'a'}
               target="_blank"
               href={'https://www.appflowy.io/what-is-new'}
@@ -78,8 +78,8 @@ export default function Help () {
               startIcon={<WhatsNewIcon />}
               variant={'text'}
             >{t('questionBubble.whatsNew')}
-            </Button>
-            <Button
+            </Button>*/}
+            {/*<Button
               component={'a'}
               href={'https://discord.gg/9Q2xaN37tV'}
               className={'justify-start'}
@@ -88,7 +88,22 @@ export default function Help () {
               startIcon={<SupportIcon />}
               variant={'text'}
             >{t('questionBubble.help')}
+            </Button>*/}
+
+            
+            {/* add gmail in the place of appflowy */}
+            <Button
+                component={'a'}
+                href={'https://mail.google.com/mail/?view=cm&fs=1&to=vs.eztech@gmail.com'}
+                className={'justify-start'}
+                target="_blank"
+                color={'inherit'}
+                startIcon={<SupportIcon />}
+                variant={'text'}
+                >
+                {t('questionBubble.help')}
             </Button>
+
             <Button
               onClick={() => {
                 const info = {
@@ -107,7 +122,7 @@ export default function Help () {
               variant={'text'}
             >{t('questionBubble.debug.name')}
             </Button>
-            <Button
+            {/*<Button
               component={'a'}
               target="_blank"
               href={'https://github.com/AppFlowy-IO/AppFlowy/issues/new/choose'}
@@ -116,10 +131,10 @@ export default function Help () {
               startIcon={<FeedbackIcon />}
               variant={'text'}
             >{t('questionBubble.feedback')}
-            </Button>
+            </Button>*/}
             
-            <Divider />
-            <Button
+            {/*<Divider />*/}
+            {/*<Button
               size={'small'}
               target="_blank"
               component={'a'}
@@ -148,7 +163,7 @@ export default function Help () {
               color={'inherit'}
               variant={'text'}
             >Reddit - r/appflowy
-            </Button>
+            </Button>*/}
           </div>
         </Popover>
       </Box>
