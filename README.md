@@ -1,4 +1,4 @@
-<h1 align="center" style="border-bottom: none">AppFlowy Web<br>
+<h1 align="center" style="border-bottom: none">EZNote<br>
 ⭐️ The Open Source Notion Alternative ⭐️
 </h1>
 <p align="center"> Use AppFlowy right in <a href="https://www.appflowy.com">your browser</a><br>
