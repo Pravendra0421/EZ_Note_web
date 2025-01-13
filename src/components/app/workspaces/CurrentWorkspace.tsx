@@ -28,7 +28,7 @@ function CurrentWorkspace({
       }}
     >
       {/*<AppFlowyLogo className={'w-[88px]'}/>*/}
-      <img src={EZLogo} className={'w-[88px]'}/>
+      <img src={EZLogo} className='w-[88px]'/>
     </div>;
   }
 

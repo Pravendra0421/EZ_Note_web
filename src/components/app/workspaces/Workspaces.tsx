@@ -140,10 +140,6 @@ export function Workspaces () {
             enterNextDelay={1000}
           >
             <IconButton
-              onClick={(e) => {
-                e.stopPropagation();
-                void openUrl('https://docs.appflowy.io/docs/guides/import-from-notion', '_blank');
-              }}
               size={'small'}
               className={'mx-2'}
             >
@@ -161,7 +157,7 @@ export function Workspaces () {
 
 
         {isOwner && <>
-          <Divider className={'w-full'} />
+          {/*<Divider className={'w-full'} />
           <Button
             size={'small'}
             startIcon={<UpgradeIcon />}
@@ -173,7 +169,7 @@ export function Workspaces () {
             className={'justify-start px-2'}
           >
             {t('subscribe.changePlan')}
-          </Button>
+          </Button>*/}
         </>}
       </div>
 
