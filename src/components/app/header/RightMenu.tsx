@@ -13,7 +13,7 @@ function RightMenu () {
 
   return (
     <div className={'flex items-center gap-2'}>
-      {/*{viewId && <ShareButton viewId={viewId} />}*/}
+      {viewId && <ShareButton viewId={viewId} />}
       {viewId && <MoreActions viewId={viewId} />}
 
       <Divider
